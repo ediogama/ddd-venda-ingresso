@@ -1,15 +1,16 @@
 import { AggregateRoot } from 'src/@core/common/domain/aggregate-root';
+import Cpf from 'src/@core/common/domain/value-objects/cpf.vo';
 import { Name } from 'src/@core/common/domain/value-objects/name.vo';
 
 export type CustomerConstructorProps = {
   id?: string;
-  cpf: string;
+  cpf: Cpf;
   name: Name;
 };
 
 export class Customer extends AggregateRoot {
   id: string;
-  cpf: string;
+  cpf: Cpf;
   name: Name;
 
   constructor(props: CustomerConstructorProps) {
