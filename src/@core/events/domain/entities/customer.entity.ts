@@ -1,6 +1,6 @@
-import { AggregateRoot } from '../../../../../src/@core/common/domain/aggregate-root';
-import Cpf from 'src/@core/common/domain/value-objects/cpf.vo';
-import { Name } from 'src/@core/common/domain/value-objects/name.vo';
+import { AggregateRoot } from './../../../../../src/@core/common/domain/aggregate-root';
+import Cpf from './../../../../../src/@core/common/domain/value-objects/cpf.vo';
+import { Name } from './../../../../../src/@core/common/domain/value-objects/name.vo';
 import Uuid from './../../../../../src/@core/common/domain/value-objects/uuid.vo';
 
 export class CustomerId extends Uuid {}
